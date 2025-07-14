@@ -1,5 +1,11 @@
 #include <stdio.h>
 
+/*
+int main(void)
+{
+    int *a = (void *)0;// it is guareented that value of object a will not associated with any function of object
+}
+*/
 
 /*
 #include <stdarg.h>
@@ -44,9 +50,15 @@ int main(void)
     return 0;
 }
 */
-/*
-//when a variable is declared in a scope, the variable will be accessible inside the scope(Scope can obtain inner scopes). If a variable cold not find in current scope, ıt will be searched in outer scopes. 
+
+//The variable will be accessible inside the declared scope(Scope can obtain inner scopes). If the compiler could not find a variable in current scope,
+//it will search it in outer scopes.
+
+
 int main(void){
+
+    int i = 33;
+    printf("%d\n", i);
     for (int i = 0; i < 4; i++)
     {
         printf("%d\n", i);
@@ -55,8 +67,9 @@ int main(void){
             printf("%d\n", i);
         }
     }
+    printf("%d\n", i);
 }
-*/
+
 
 /*
 //what happens if a string pushed into smaller lengthed array, could remain string elements reachable? 
