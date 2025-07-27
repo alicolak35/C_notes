@@ -51,14 +51,15 @@ int main(void)
 }
 */
 
-//The variable will be accessible inside the declared scope(Scope can obtain inner scopes). If the compiler could not find a variable in current scope,
+
+/*
+//The variable will be accessible inside the declared scope(Scope can obtain inner scopes). If the compiler could not find the variable in current scope,
 //it will search it in outer scopes.
 
-
 int main(void){
-
-    int i = 33;
-    printf("%d\n", i);
+    
+int i = 33;
+printf("%d\n", i);
     for (int i = 0; i < 4; i++)
     {
         printf("%d\n", i);
@@ -69,6 +70,7 @@ int main(void){
     }
     printf("%d\n", i);
 }
+*/
 
 
 /*

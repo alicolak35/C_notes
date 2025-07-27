@@ -65,6 +65,7 @@ int main(void)
     int a[5], b[5], c[5];
 
     for (int i = 0; i< (sizeof a / sizeof a[0]); i++){
-        a[i] = b[i] = c[i] = i;//assignment(=) operator has right to left precedence 
+        a[i] = b[i] = c[i] = i;//assignment(=) operator has right to left precedence
+        //(a[i] = (b[i] = (c[i] = i)));
     }
 }
